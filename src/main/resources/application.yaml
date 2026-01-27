@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-webflux-example
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/payments
+    username: postgres
+    password: postgres
+
+  flyway:
+    url: jdbc:postgresql://localhost:5432/payments
+    user: postgres
+    password: postgres
+    locations: classpath:db/migration
+
+  sql:
+    init:
+      mode: never
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG

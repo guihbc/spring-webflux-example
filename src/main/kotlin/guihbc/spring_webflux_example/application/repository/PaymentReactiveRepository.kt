@@ -1,0 +1,6 @@
+package guihbc.spring_webflux_example.application.repository
+
+import guihbc.spring_webflux_example.application.repository.entity.PaymentEntity
+import org.springframework.data.repository.reactive.ReactiveCrudRepository
+
+interface PaymentReactiveRepository: ReactiveCrudRepository<PaymentEntity, Long>
