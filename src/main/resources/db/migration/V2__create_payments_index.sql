@@ -1,0 +1,1 @@
+CREATE INDEX idx_payments_idempotency_key ON payments (idempotency_key);
