@@ -34,8 +34,8 @@ Mono and Flux - The building blocks:
 Reactive repositories:
 ```kotlin
 interface UserRepository : ReactiveCrudRepository<User, Long> {
-fun findByEmail(email: String): Mono<User>
-fun findAll(): Flux<User>
+    fun findByEmail(email: String): Mono<User>
+    fun findAll(): Flux<User>
 }
 ```
 
